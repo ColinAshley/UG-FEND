@@ -1,0 +1,54 @@
+/* stylesheet for cols Animal Trading Card */
+
+/* font used for complete document */
+* {
+     font-family: 'Montserrat', sans-Serif;
+}
+
+/* add some bottom padding to the heading */
+h3 {
+   padding-bottom: 5px;
+}
+
+/* the card itself */
+.card_container {
+   width: 300px;
+   border: 1px solid lightgrey;
+   box-shadow: 5px 5px 20px 0px rgba(153,153,153,0.5);
+   padding: 10px;
+   /* Colours picked from image using the Browser Dev Tools colour picker */
+   background: linear-gradient(70deg, #bab6b2, #f4faf6); 
+}
+
+.image {
+   width: 300px;
+   height: 200px;
+   border: 1px solid white;
+   border-radius: 5px;
+   border-top-right-radius: 45px;
+}
+
+/* surrounds facts, list and description */
+.info_container {
+   width: 280px;
+   border: 1px solid white;
+   padding: 10px;
+   font-size: 12px;
+   border-radius: 5px;
+}
+
+.facts {
+   font-style: italic;
+   color: brown;
+}
+
+/* an un-numbered list with no bullet points */
+.ulist {
+   list-style-type: none;
+   padding: 0px;
+}
+
+/* display list titles in bold */
+.ulist span {
+   font-weight: bold;
+}
