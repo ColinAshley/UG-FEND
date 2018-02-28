@@ -1,0 +1,104 @@
+/* Google-Udacity FEND 14/11 Project update Part 2.
+** Date: 28th February 2018
+** Author: Colin Ashley
+*/
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero {
+   order: 5;
+}  
+.top-news, .scores, .weather, .recent-news {
+   order: 5;
+}
+
+.header__title { vertical-align: bottom; }
+
+.header__menu {
+  display: none;
+}
+
+/* My Nexus 5 and other mobiles */
+/* Use main style */
+
+@media screen and (max-width: 413px) {
+   .header, .topnews, .scores, .weather, .recent-news {
+      width: 100%;
+   }
+   .header__title { font-size: 20px; }
+
+   /* cut'n'pasted this from the solution as this hasn't been fully
+    * covered at this point (JS) */
+   .nav { 
+      z-index: 10;
+      background-color: #fff;
+      width: 300px;
+      position: absolute;
+      /* This trasform moves the drawer off canvas. */
+      -webkit-transform: translate(-300px, 0);
+      transform: translate(-300px, 0);
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.3s ease;
+   }
+   .nav.open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+   }
+   .nav__item {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: left;
+   }
+   .header__menu {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      padding: 1em;
+   }
+   .header__menu svg {
+      width: 32px;
+      fill: #E0E0E0;
+   }
+}
+
+/* Tablets & above */
+@media screen and (min-width: 414px) and (max-width: 799px) {
+   .header__title { font-size: 24px; }
+   .hero { order: 1; }
+   .top-news { order: 2;
+               width: 50%;
+   }
+   .weather { order: 3;
+              width: 50%;
+   }
+   .scores { order: 4;
+             width: 100%;
+   }
+}
+
+/* PC & Large Screens (as default, but limit width) */
+@media screen and (min-width: 800px) {
+  .main, .header, .inner, .nav, .content { 
+     width: 100%;
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+  }
+  .hero { order: 1;
+            width: 50%
+  }
+  .weather { order: 2;
+             width: 50%;
+  }
+  .top-news { order: 3;
+              width: 50%;
+  }
+  .scores { order: 4;
+            width: 50%;
+  }
+}
+
