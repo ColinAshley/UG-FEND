@@ -13,7 +13,7 @@
   h1 { font-size: 26px; }
   h2 { font-size: 14px; }
   .header-image { width: 20%; }
-  .feature-item { width:  100%; }
+  .feature-item { width: 100%; }
   .section-title {
     font-size: 24px;
     text-align: center;
@@ -25,17 +25,13 @@
 */ 
 @media screen and (min-width: 413px) and (max-width: 768px) {
   .feature-item {
-    width:  80%;
-    margin:  0 auto 0 auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
   }
   h1 { font-size: 26px; }
-  .header-image { width:  10%; }
+  .header-image { width: 10%; }
   .section-title {
     font-size: 28px;
     text-align: center;
   }
-}
-
-/* full screens */
-@media screen and (min-width: 769px) {
 }
