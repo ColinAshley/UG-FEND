@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Filename:         index.html
+     Project:          FEND L16 Project - Build a portfolio site
+     Author:           Colin Ashley
+     Submission Date:  15th March 2018
+     Description:      Responsive Project Portfolio page.
+ -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Mina Web-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+  <link href="css/common-style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <title>Colin Ashley - Front-End Web Developer</title>
+</head>
+
+<body>
+	<!-- header image & titles -->
+	<header class="header">
+	  <div class="header-logo">
+	    <img class="header-image" src="img/header-image.svg" alt="header-image">
+	    <h1>Colin Ashley</h1>
+		  <h2>Front-End Web Developer</h2>
+	  </div>
+	</header>
+
+  <!-- impact image -->
+  <!-- Loads size optimized image -->
+  <section class="impact">
+    <picture>
+    	<img class="impact-image"
+        srcset="img/impact-image-high-360.jpg 360w,
+                img/impact-image-high-768.jpg 768w,
+                img/impact-image-high-960.jpg 960w"
+        sizes="(max-width: 360px) 360px,
+               (max-width: 768px) 768px,
+               960px"
+        src="img/impact-image-high-960.jpg" 
+        alt="impact-image">
+    </picture>
+  </section>
+
+  <!-- main content -->
+  <main>
+  	<!-- The Featured Work section contains multiple Feature Items -->
+    <p class="section-title">Featured Work</p>
+    <section class="featured-container">
+      <figure class="feature-item">
+      	<a href="http://fend.colscloud.co.uk/atc/card.html" target="_blank">
+	        <img class="feature-image" 
+	          srcset="img/atc-image-300.jpg 360w,
+              img/atc-image-720.jpg 768w,
+              img/atc-image-720.jpg 960w"
+            sizes="(max-width: 360px) 360px,
+              (max-width: 768px) 768px,
+              960px"
+            src="img/atc-image-720.jpg" 
+            alt="Animal Trading Card">
+        </a>
+        <figcaption class="caption">
+          Trading Card
+	        <a href="http://fend.colscloud.co.uk/atc/card.html" target="_blank">
+	        	<p class="caption-url">fend.colscloud.co.uk/atc</p>
+	        </a>
+	      </figcaption>
+      </figure>
+      <figure class="feature-item">
+      	<a href="http://fend.colscloud.co.uk/comrespat_final" target="_blank">
+	        <img class="feature-image" 
+	          srcset="img/brighton-image-300.jpg 360w,
+              img/brighton-image-720.jpg 768w,
+              img/brighton-image-720.jpg 960w"
+            sizes="(max-width: 360px) 360px,
+              (max-width: 768px) 768px,
+              960px"
+	          src="img/brighton-image-720.jpg" 
+	          alt="Common Responsive Patterns">
+        </a>
+        <figcaption class="caption">
+          Brighton Times
+	        <a href="http://fend.colscloud.co.uk/comrespat_final" target="_blank">
+	        	<p class="caption-url">fend.colscloud.co.uk/comresp_final</p>
+	        </a>
+	      </figcaption>
+      </figure>
+      <figure class="feature-item">
+      	<a href="http://fend.colscloud.co.uk/responsive_resume" target="_blank">
+	        <img class="feature-image" 
+	          srcset="img/resume-image-360.jpg 360w,
+              img/resume-image-720.jpg 768w,
+              img/resume-image-720.jpg 960w"
+            sizes="(max-width: 360px) 360px,
+              (max-width: 768px) 768px,
+              960px"
+	          src="img/resume-image-720.jpg" 
+	          alt="Common Responsive Patterns">
+        </a>
+        <figcaption class="caption">
+          Mobile Resume
+	        <a href="http://fend.colscloud.co.uk/responsive_resume" target="_blank">
+	        	<p class="caption-url">fend.colscloud.co.uk/responsive_resume</p>
+	        </a>
+	      </figcaption>
+      </figure>
+    </section>
+
+    <!-- footer for contact details -->
+    <footer class="footer">
+    	<h2>Contact: 
+    	  <a href="mailto:colinashley306@gmail.com">colinashley306@gmail.com</a>
+      </h2>
+    </footer>
+  </main>
+</body>
+</html>	

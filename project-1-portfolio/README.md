@@ -20,7 +20,7 @@ Udacity Front-End Web Dev Nano-Degree project 1. A responsive portfolio site to 
 
 ## Installation
 
-Download all the files to you local machine.
+Download all the files to your local machine.
 
 `$ git clone https://github.com/ColinAshley/UG-FEND`
 `$ cd project-1-portfolio`
